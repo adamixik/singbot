@@ -1,0 +1,6 @@
+<meta>
+	<security>false</security>
+	<script>easyini.nut</script>
+	<script>crypto.nut</script>
+	<script>users.nut</script>
+</meta>
