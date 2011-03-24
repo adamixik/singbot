@@ -1,0 +1,14 @@
+#summary List of events.
+
+= Events=
+
+* connect()
+* privmsg(target, nick, host, ident, params)
+* join(nick, host, ident, params)
+* part(nick, host, ident, params)
+* quit(nick, host, ident)
+* mode() // under construction
+* nick(nick, host, ident, params)
+* init()
+* resourceStart()
+* resourceStop()
