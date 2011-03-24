@@ -1,0 +1,22 @@
+#summary Functions
+
+= Functions =
+
+== Bot natives ==
+
+* Log * (string message)<br>
+* GetBotNick * ()<br>
+* GetServer * ()<br>
+* GetBotUserName * ()<br>
+* GetBotRealName * ()<br>
+* GetServerPort * ()<br>
+
+== IRC natives ==
+
+* Raw * (string command)<br>
+* Join * (string channel)<br>
+* JoinPass * (string channel, string password)<br>
+* Part * (string channel)<br>
+* Privmsg * (string target, string message)<br>
+* Notice * (string target, string message)<br>
+* Mode * (string target, string modes)<br>
