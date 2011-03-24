@@ -2,13 +2,13 @@
 
 = Events=
 
-* connect()<br>
-* privmsg(target, nick, host, ident, params)<br>
-* join(nick, host, ident, params)<br>
-* part(nick, host, ident, params)<br>
-* quit(nick, host, ident)<br>
-* mode() // under construction<br>
-* nick(nick, host, ident, params)<br>
-* init()<br>
-* resourceStart()<br>
-* resourceStop()<br>
+* connect *()<br>
+* privmsg *(target, nick, host, ident, params)<br>
+* join *(nick, host, ident, params)<br>
+* part *(nick, host, ident, params)<br>
+* quit *(nick, host, ident)<br>
+* mode *() // under construction<br>
+* nick *(nick, host, ident, params)<br>
+* init *()<br>
+* resourceStart *()<br>
+* resourceStop *()<br>
