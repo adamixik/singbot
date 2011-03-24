@@ -30,7 +30,7 @@ private:
 	int m_port;
 
 	// Events
-	static int OnMOTD(char* params, irc_reply_data* hostd, void* conn);
+	static int OnConnect(char* params, irc_reply_data* hostd, void* conn);
 	static int OnPrivmsg(char* params, irc_reply_data* hostd, void* conn);
 	static int OnJoin(char* params, irc_reply_data* hostd, void* conn);
 	static int OnPart(char* params, irc_reply_data* hostd, void* conn);

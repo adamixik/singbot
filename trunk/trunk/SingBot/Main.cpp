@@ -19,6 +19,7 @@ int main()
 	g_pRootEntity = new CRootEntity();
 	g_pResourceManager = new CResourceManager();
 	g_pConfig = new CConfig();
+
 	if(!g_pConfig->Open("SingBot2.conf"))
 	{
 		printf("Can't open SingBot2.conf. Halt!");
@@ -63,6 +64,14 @@ int main()
 	g_pConfig->GetValueAsString("RealName", "SingBot", &realname);
 	g_pConfig->GetValueAsString("Password", "", &password);
 	g_pConfig->GetValueAsInteger("Port", 6667, &port);
+
+	printf("-----------------------------------------\n");
+	printf("Server: %s\n", server.C_String());
+	printf("Port: %d\n", port);
+	printf("Nick: %s\n", nick.C_String());
+	printf("Username: %s\n", username.C_String());
+	printf("Realname: %s\n", realname.C_String());
+	printf("-----------------------------------------\n");
 
 	g_pIRC = new CIRC(server.GetData(), port, nick.GetData(), username.GetData(), realname.GetData(), password.GetData());
 
