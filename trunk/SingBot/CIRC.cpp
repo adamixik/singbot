@@ -30,7 +30,7 @@ void FixParams(char * params)
 	}
 }
 
-int CIRC::OnMOTD(char* params, irc_reply_data* hostd, void* conn)
+int CIRC::OnConnect(char* params, irc_reply_data* hostd, void* conn)
 {
 	IRCSocket* irc_conn=(IRCSocket*)conn;
 	g_pRootEntity->CallEvent("connect", NULL);
@@ -154,7 +154,7 @@ CIRC::CIRC(char * szServer, int iPort, char * szNick, char * szUserName, char * 
 	conn = new IRCSocket();
 	conn->start(szServer, iPort, szNick, szUserName, szRealName, szPassword);
 
-	conn->hook_irc_command("001", &OnMOTD);
+	conn->hook_irc_command("001", &OnConnect);
 	conn->hook_irc_command("PRIVMSG", &OnPrivmsg);
 	conn->hook_irc_command("JOIN", &OnJoin);
 	conn->hook_irc_command("PART", &OnPart);
